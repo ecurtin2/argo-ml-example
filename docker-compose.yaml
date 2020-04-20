@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   ml:
-    image: simple-ml:latest
+    image: evamicur/simple-ml:latest
     build: .
     volumes:
       - ./code:/code

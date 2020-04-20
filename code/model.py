@@ -33,4 +33,7 @@ def save(m, path):
 
 
 def load(path):
-    return joblib.load(path)
+    logger.info(f"Loading model from {path}")
+    m = joblib.load(path)
+    logger.info("Successfully loaded model")
+    return m

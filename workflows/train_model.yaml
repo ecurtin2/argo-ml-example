@@ -22,3 +22,13 @@ spec:
             artifacts:
               - name: dataset-csv
                 from: "{{tasks.download-dataset.outputs.artifacts.dataset-csv}}"
+
+        - name: train
+          dependencies: [download-dataset]
+          templateRef:
+            name: train
+            template: train
+          arguments:
+            artifacts:
+              - name: data
+                from: "{{tasks.download-dataset.outputs.artifacts.dataset-csv}}"

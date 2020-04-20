@@ -1,3 +1,5 @@
+import sys
+
 import click
 from loguru import logger
 
@@ -34,4 +36,5 @@ def serve(model_file):
 
 
 if __name__ == "__main__":
+    logger.info(f"Called SimpleML with args: {sys.argv}")
     cli()
