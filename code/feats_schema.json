@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "properties": {
+    "sepal_length_cm":  {"type": "number", "minimum":  4.3, "maximum":  7.9},
+    "sepal_width_cm": {"type": "number", "minimum":  2.0, "maximum":  4.4},
+    "petal_length_cm": {"type": "number", "minimum":  1.0, "maximum":  6.9},
+    "petal_width_cm": {"type": "number", "minimum":  0.1, "maximum":  2.5}
+  },
+  "required": ["sepal_length_cm", "sepal_width_cm", "petal_length_cm", "petal_width_cm"]
+}

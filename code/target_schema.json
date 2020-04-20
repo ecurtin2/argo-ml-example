@@ -1,0 +1,7 @@
+{
+  "type": "object",
+  "properties": {
+    "class":  {"type": "string", "enum": ["Iris-setosa", "Iris-versicolor", "Iris-virginica"]}
+  },
+  "required": ["petal_width_cm"]
+}
