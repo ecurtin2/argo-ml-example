@@ -13,6 +13,7 @@ spec:
           templateRef:
             name: download
             template: download
+
         - name: summarize
           dependencies: [download-dataset]
           templateRef:

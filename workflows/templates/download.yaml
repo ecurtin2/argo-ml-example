@@ -3,7 +3,6 @@ kind: WorkflowTemplate
 metadata:
   name: download
 spec:
-  entrypoint: download
   templates:
     - name: download
       inputs:

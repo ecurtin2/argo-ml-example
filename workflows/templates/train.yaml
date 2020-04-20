@@ -3,7 +3,6 @@ kind: WorkflowTemplate
 metadata:
   name: train
 spec:
-  entrypoint: train
   templates:
     - name: train
       inputs:
@@ -15,7 +14,7 @@ spec:
         artifacts:
           - name: data
             path: /home/anaconda/iris.data
-      script:
+      container:
         image: evamicur/simple-ml
         args: ["train", "--data={{inputs.artifacts.data.path}}", "--output={{outputs.artifacts.model.path}}"]
         resources:
