@@ -6,5 +6,6 @@ services:
     build: .
     volumes:
       - ./code:/code
+      - ./models:/models
     ports:
       - 5000:5000
